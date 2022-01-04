@@ -4,7 +4,9 @@ import cors from "cors";
 import ApiRoute from "./api/api.route";
 import bodyParser from "body-parser";
 
-mongoose.connect("mongodb://localhost/epicureDB");
+mongoose.connect(
+  "mongodb://ec2-3-131-97-117.us-east-2.compute.amazonaws.com/epicureDB"
+);
 
 export default class App {
   app: express.Application;
