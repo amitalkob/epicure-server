@@ -8,7 +8,7 @@ var mongoose_1 = __importDefault(require("mongoose"));
 var cors_1 = __importDefault(require("cors"));
 var api_route_1 = __importDefault(require("./api/api.route"));
 var body_parser_1 = __importDefault(require("body-parser"));
-mongoose_1.default.connect("mongodb://ec2-3-131-97-117.us-east-2.compute.amazonaws.com/epicureDB");
+mongoose_1.default.connect("mongodb+srv://amit:Aa123456@epicure.xgnob.mongodb.net/epicureDB");
 var App = /** @class */ (function () {
     function App(port) {
         this.app = (0, express_1.default)();
